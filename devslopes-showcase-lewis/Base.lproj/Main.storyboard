@@ -338,6 +338,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
+                                            <outlet property="descriptionText" destination="0ce-CO-129" id="XVw-5j-ENJ"/>
+                                            <outlet property="likesLbl" destination="2me-C7-1ew" id="JgV-i8-Z5p"/>
                                             <outlet property="profileImg" destination="0iV-qa-4UM" id="MYe-Np-wHq"/>
                                             <outlet property="showcaseImg" destination="YA0-3y-ShR" id="zfX-w3-xww"/>
                                         </connections>

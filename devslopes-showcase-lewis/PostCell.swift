@@ -15,6 +15,8 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var descriptionText: UITextView!
     @IBOutlet weak var likesLbl: UILabel!
     
+    var post: Post!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -33,7 +35,15 @@ class PostCell: UITableViewCell {
         showcaseImg.clipsToBounds = true
     }
 
-    func configureCell() {
+    func configureCell(post: Post) {
+        self.post = post
+        
+        self.descriptionText.text = post.postDescription
+        self.likesLbl.text = "\(post.likes)"
+        
+        
+        
+        
         
     }
 }
